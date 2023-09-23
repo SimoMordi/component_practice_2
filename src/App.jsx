@@ -1,5 +1,7 @@
 import './App.css'
 import NewsTicker from './Component1';
+import ColorPicker from './Component2';
+import UserProfileCard from './Component3';
 
 const App = () => {
 
@@ -18,11 +20,13 @@ const App = () => {
 
         <div className="component-container blue">
           <h1>component 2</h1>
+          <ColorPicker />
           {/* put component2 RIGHT here */}
         </div>
 
         <div className="component-container green">
           <h1>component 3</h1>
+          <UserProfileCard />
           {/* put component3 RIGHT here */}
         </div>
 

@@ -1,15 +1,30 @@
-import React from 'react'
-
-const ColorPicker = () => {
+import React, { useState } from "react";
 
 
+const ColorSelector = () => {
+  const [selectedColor, setSelectedColor] = useState("");
 
-    
+  const handleChange = (color) => {
+    setSelectedColor(color);
+  };
+
   return (
     <div>
-      
-    </div>
-  )
-}
+      <form className={selectedColor}>
+        {["red", "green", "purple"].map(color => (
+          <label>
+            <input
+              type="radio"
+              value={color}
+              checked={selectedColor === color}
+              onChange={() => handleChange(color)}
+            />
+          </label>
+        ))}
+      </form>
 
-export default ColorPicker
+    </div>
+  );
+};
+
+export default ColorSelector;
