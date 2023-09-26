@@ -2,6 +2,8 @@ import './App.css'
 import NewsTicker from './Component1';
 import ColorPicker from './Component2';
 import UserProfileCard from './Component3';
+import RateReview from './Component4';
+import ImageCarousel from './Component5';
 
 const App = () => {
 
@@ -14,37 +16,33 @@ const App = () => {
       <div className="easy flex-row">
         <div className="component-container red">
           <h1>component 1</h1>
-          <NewsTicker />
+          {/* <NewsTicker /> */}
           {/* put Component1 RIGHT here */}
         </div>
 
         <div className="component-container blue">
           <h1>component 2</h1>
-          <ColorPicker />
+          {/* <ColorPicker /> */}
           {/* put component2 RIGHT here */}
         </div>
 
-        <div className="component-container green">
+        <div className="component3 green">
           <h1>component 3</h1>
-          <UserProfileCard />
+          {/* <UserProfileCard /> */}
           {/* put component3 RIGHT here */}
         </div>
 
         <div className="component-container grey">
           <h1>component 4</h1>
+          <RateReview />
           {/* put component4 RIGHT here */}
         </div>
       </div>
-      
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
+            
       <div className="flex-row ">
         <h1>Level: Hard</h1>
-        <img className="image" src="./assets/work2.jpg" alt="work" />
+       
+        <ImageCarousel />
       </div>
       <div className="easy flex-row">
         <div className="component-container red">
@@ -55,14 +53,8 @@ const App = () => {
           <h1>component 6</h1>
           {/* put component6 RIGHT here */}
         </div>
-        <div className="component-container green">
-          <h1>component 7</h1>
-          {/* put component7 RIGHT here */}
-        </div>
-        <div className="component-container grey">
-          <h1>component 8</h1>
-          {/* put component8 RIGHT here */}
-        </div>
+        
+        
       </div>
       
 

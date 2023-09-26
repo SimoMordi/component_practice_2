@@ -14,6 +14,13 @@
   height: 400px;
   margin: 10px;
 }
+.component3{
+  min-width: 300px;
+  height: 500px;
+  margin: 10px;
+  
+}
+
 
 .red {
   background-color: red;
@@ -23,6 +30,7 @@
 }
 .green {
   background-color: green;
+ 
 }
 .grey {
   background-color: grey;
