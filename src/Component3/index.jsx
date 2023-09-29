@@ -28,6 +28,7 @@ const UserProfileCard = () => {
             </div>
         );
     };
+    
 
     return (
         <div>
